@@ -5,7 +5,7 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
-gem 'turbolinks'
+#gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '>= 3.0.0.0'
 gem 'cancan'
@@ -15,6 +15,11 @@ gem 'pg'
 gem 'puma'
 gem 'rolify'
 gem 'simple_form'
+
+gem 'angularjs-rails', '>=1.2.0.rc1'
+gem 'ngmin-rails'
+gem 'bootstrap-sass-rails'
+
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]

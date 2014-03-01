@@ -26,6 +26,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     addressable (2.3.5)
+    angularjs-rails (1.2.13)
     arel (4.0.2)
     atomic (1.1.15)
     bcrypt (3.1.7)
@@ -38,6 +39,9 @@ GEM
       debug_inspector (>= 0.0.1)
     bootstrap-sass (3.1.1.0)
       sass (~> 3.2)
+    bootstrap-sass-rails (3.0.3.0)
+      railties (>= 3.1.0)
+      sass-rails (>= 3.1.0)
     builder (3.1.4)
     cancan (1.6.10)
     capybara (2.2.1)
@@ -124,6 +128,8 @@ GEM
     mini_portile (0.5.2)
     minitest (4.7.5)
     multi_json (1.8.4)
+    ngmin-rails (0.4.0)
+      rails (>= 3.1)
     nio4r (1.0.0)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
@@ -204,8 +210,6 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (2.2.1)
-      coffee-rails
     turnip (1.2.1)
       gherkin (>= 2.5)
       rspec (>= 2.0, < 4.0)
@@ -222,9 +226,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  angularjs-rails (>= 1.2.0.rc1)
   better_errors
   binding_of_caller
   bootstrap-sass (>= 3.0.0.0)
+  bootstrap-sass-rails
   cancan
   capybara
   coffee-rails (~> 4.0.0)
@@ -238,6 +244,7 @@ DEPENDENCIES
   guard-rspec
   jbuilder (~> 1.2)
   jquery-rails
+  ngmin-rails
   pg
   puma
   quiet_assets
@@ -250,6 +257,5 @@ DEPENDENCIES
   rspec-rails
   sass-rails (~> 4.0.0)
   simple_form
-  turbolinks
   turnip (>= 1.1.0)
   uglifier (>= 1.3.0)
