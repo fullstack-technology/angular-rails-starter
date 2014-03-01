@@ -5,14 +5,26 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 		<title><%= content_for?(:title) ? yield(:title) : "Angular Rails Starter" %></title> 
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Rails4 Starter App" %>">
 		<%= csrf_meta_tags %>
 		<%= stylesheet_link_tag "application", :media => "all" %>
+
   </head>
   <body>
+  	<header>
+      <%= render 'layouts/navigation' %>
+    </header>
+    
+    <main role="main">
+       <%= render 'layouts/messages' %>
+       <%= yield %>
+    </main>
+  
 		<div class="container"> 
 			<h1>Text!</h1>
 			<div data-ng-view></div>
 		</div> <!-- /container -->
+		
 		<%= javascript_include_tag "application" %> 
 	</body>
 </html>
